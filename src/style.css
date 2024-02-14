@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+ }
+ 
+ 
+ * {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ 
+ body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+ }
+ 
+ 
+ img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+ }
+ 
+ 
+ input, button, textarea, select {
+  font: inherit;
+ }
+ 
+ 
+ p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+ }
+ 
+ 
+ button, a{
+  cursor: pointer;
+  }
+ 
+ 
+ a{
+    text-decoration: none;
+ }
+ 
+ 
+ 
+ 
+ /* Footer */
+ 
+ 
+ html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+ }
+ 
+ 
+ body {
+ /* footer support */
+  margin-bottom: 48px;
+ }
+ 
+ 
+ .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+ }
+ 
+ 
+ .fa-github {
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ 
+ .fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+ }
+ 
+ 
+ 
+ 
+ fieldset{
+    border: none;
+   }
+   ul{
+    list-style: none;
+   }
+
+   
+
+.location-form{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 4vw;
+  align-items: center;
+}
+
+.location-form > fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  /* border: 1px solid red; */
+}
+
+.location-form .wrapper{
+  display: flex;
+  gap: 2vw;
+}
+/* label{
+  border: 1px solid red;
+} */
+
+.location-form .input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid rgb(87, 86, 86);
+  background-color: rgb(246, 248, 248);
+  color:rgb(87, 86, 86);
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 0.9rem;
+  min-width: 20vw;
+  will-change: background-color;
+  transition: background-color 0.3s;
+}
+
+input:hover{
+  background-color: rgb(236, 238, 238);
+}
+
+input:focus{
+  background-color: rgb(208, 211, 211);
+}
+
+input+span{
+  font-size: 0.8rem;
+  color: red;
+}
+
+input:focus{
+  outline: none;
+}
+
+.location-form button{
+  background: rgb(18,33,238);
+  background: linear-gradient(90deg, rgba(18,33,238,1) 0%, rgba(30,175,184,1) 80%);
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 6px;
+  transition:0.4s;
+}
+
+.location-form button:hover{
+  background-color: white;
+  background: none;
+  color: rgb(18,33,238);
+  border: 3px solid rgb(18,33,238);;
+}

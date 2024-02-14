@@ -1,0 +1,14 @@
+Fields:
+email
+Zip code
+country
+Password
+Password validation
+
+
+
+label > display flex, column
+  input field > width 100%
+  span > color red
+
+
