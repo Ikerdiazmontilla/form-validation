@@ -126,14 +126,14 @@
 }
 
 input{
-  border: none;
+  border: 2px solid transparent;
   border-bottom: 2px solid rgb(87, 86, 86);
   background-color: rgb(246, 248, 248);
   color:rgb(87, 86, 86);
   border-radius: 12px;
   padding: 8px;
   font-size: 0.9rem;
-  min-width: 20vw;
+  min-width: 30vw;
   will-change: background-color;
   transition: background-color 0.3s;
 }
@@ -148,11 +148,26 @@ input:focus{
 
 input+span{
   font-size: 0.8rem;
+  color: transparent;
+}
+
+input:invalid + span{
   color: red;
 }
 
 input:focus{
   outline: none;
+}
+
+input:invalid{
+  border: 2px solid red;
+}
+
+input:placeholder-shown{
+  border: 2px solid transparent;
+}
+input:placeholder-shown + span{
+  color: transparent;
 }
 
 .location-form button{
